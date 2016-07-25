@@ -1,10 +1,10 @@
 # Site settings
 title: Linux学习之路
-header-img: "img/green.jpg"
+header-img: "img/twitter.jpg"
 tagline: "cn"  
 description: "绯云破晓|读而立·写而生"  
 baseurl: ""
-url: "http://cnfeat"  
+url: ""  
 
 # About/contact
 owner: 
@@ -44,7 +44,7 @@ defaults:
     values:
       layout: "post"
       author: "CnFeat"
-      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+      header-img: "img/twitter.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
 comments :
