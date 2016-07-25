@@ -1,86 +1,63 @@
-#
-# weiyi.theme.modify 配置_config.yml
-# 其中定义的变量，可以通过site引用，
-# 比如，/_layouts/blog.html中 {{ site.favicon }} 引用网站图标，
-# 所有硬编码全部通过这种方式引用，如blog.html, post.html, rss.html, tags.md, categories.md, etc. 
-# 部分变量由Jekyll解析，比如 markdown.
-#
+# Site settings
+title: Linux学习之路
+header-img: "img/twitter.jpg"
+tagline: "cn"  
+description: "绯云破晓|读而立·写而生"  
+baseurl: ""
+url: ""  
 
+# About/contact
+owner: 
+  name: "Andy Shen"
+  email: 39658218@qq.com
+  bio: "Linux学习之路"
 
-title:              Jamin Zhang
-description:        To be empty in order to be full!
-disqus_shortname:
-duoshuo_shortname:  jaminzhang
-url:                http://jaminzhang.me
+# Data
+gavatar: http://dreamofbook.qiniudn.com/Az..png
+favicon: img/favicon.png
 
-# url_tags必须和tags.md中的permalink定义相同，这样定义的原因是不希望permalink中包含文件类型后缀。
-# 或者tags.md中不定义permalink，这里直接引用tags.md的在目录中的绝对地址。
-# 其它几个url也需要遵循这个原则。
-# 
-url_tags:           /tags/
-url_categories:     /categories/
-url_timeline:       /timeline/
-url_rss:            /rss/
-url_about:          /about/
+douban_username:  
+twitter_username: 
+github_username: 
+facebook_username: 
+weibo_username: 
+zhihu_username: 
 
-production_url:     http://jaminzhang.me           # production_url是sitemap生成的url,方便百度谷歌收录.
-favicon:            /images/favicon.ico
-# back_to_top:      /images/back_to_top.png # JekyllPure.css不能引用{{site.}}???
-
-
-# Owner/Author information
-author:
-  name:             Jamin Zhang
-  avatar:           /images/avatar.png
-  email:            zhangjamin@163.com
-  # Social networking links used in footer. Update and remove as you like.
-  github:           https://github.com/JaminZhang      
-  weibo:            
-  douban:       
-  
-  
-# Background image to be tiled on all pages
-background: 
-
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-relative_permalinks: false
-
-
-# Amount of post to show on home page
-paginate: 5
-
+# Build settings  
+# use Github Flavored Markdown !important  
+# document: http://jekyllrb.com/docs/configuration/#kramdown  
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 8
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Shanghai
-future:      true
-          
+timezone: Asia/Shanghai
 
-# weiyi.theme.modify markdown设置
-# redcarpet extensions 含义参考 https://github.com/vmg/redcarpet
-# 选择它的主要原因是，支持```language```语法，用来标记代码块，不需要缩进4个空格。
-# 另外还支持脚注、文本高亮、删除线等扩展的markdown语法，
-# 需要加入extensions列表才能开启或关闭相应功能。
-# 
-# 表格语法需要特别注意 :-: 中间若有空格，可能不会解析。
-# no_intra_emphasis: do not parse emphasis inside of words 不解析单词间的下划线
-#
-# 其它可选的markdown: rdiscount, kramdown, 
-#
-#markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "quote", "highlight", "tables", "footnotes"]
-#highlighter: pygments
-highlighter: rouge
-    
+# Defaults for posts
+defaults:
+  -
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "CnFeat"
+      header-img: "img/twitter.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments 
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : 
+  disqus :
+      short_name : 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics: 
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
-
-include: []
-exclude: ["README.md"]
+# Links to include in footer navigation
