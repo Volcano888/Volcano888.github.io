@@ -1,0 +1,51 @@
+---
+layout: blog
+title : 博文分类
+permalink: /categories/
+---
+
+<p></p>
+
+<div id='tagcloud' >
+    {% for category in site.categories %}
+    <a href="{{site.url_categories}}#{{ category[0] }}" title="{{ category[0] }}" rel="{{ category[1].size }}">#{{ category[0] }}</a>
+    {% endfor %}
+</div>
+<script src="/js/min/jquery.tagcloud.min.js"></script>
+<script type="text/javascript">
+    $.fn.tagcloud.defaults = {
+        size: {start: 12, end: 25, unit: 'pt'},
+        color: {start: '#90a0dd', end: '#0cf'}
+    };
+    $(function () {
+        $('#tagcloud a').tagcloud();
+    });
+</script>
+
+
+<div class="f5">
+    {% for category in site.categories %}
+    <div class="column fJqueryba">
+        <h2 class=""><a name="{{ category[0] }}"></a>{{ category[0] }}</h2>
+        <ul class="columnUl">
+            {% for post in category[1] %}
+            <li>
+                <b><a href="{{ post.url  }}" title="" class="gray_2" target="_blank">{{ post.title }}</a></b>
+            </li>
+            <!-- weiyi.theme.modify 归档页面增加文章描述
+            <br><font color="gray">{{ post.description }}</font></br>
+            -->
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+
+
+<link rel="stylesheet" href="/css/min/type.css" type="text/css"  media="screen" />
+<script src="/js/min/jquery.highight.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".f5").jquerybaHighlight({HighlightClass:"Highlight"});
+    });
+</script>
