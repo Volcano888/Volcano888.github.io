@@ -8,7 +8,7 @@
 
 
 title:              Linux成长之路
-description:        读而立·写而生
+description:        绯云破晓|读而立·写而生
 disqus_shortname:
 duoshuo_shortname:  绯云破晓
 url:                https://volcano888.github.io/
@@ -69,7 +69,8 @@ future:      true
 # 其它可选的markdown: rdiscount, kramdown, 
 #
 #markdown: redcarpet
-markdown: kramdown
+#markdown: kramdown
+
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "quote", "highlight", "tables", "footnotes"]
 #highlighter: pygments
