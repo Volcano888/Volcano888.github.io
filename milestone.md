@@ -8,7 +8,7 @@ header-img: "img/zhihu.jpg"
 <p></p>
 
 <div id='tagcloud' >
-    {% for category in site.categories %}
+    {% for category in site.milestone %}
     <a href="{{site.url_categories}}#{{ category[0] }}" title="{{ category[0] }}" rel="{{ category[1].size }}">#{{ category[0] }}</a>
     {% endfor %}
 </div>
@@ -25,7 +25,7 @@ header-img: "img/zhihu.jpg"
 
 
 <div class="f5">
-    {% for category in site.categories %}
+    {% for category in site.milestone %}
     <div class="column fJqueryba">
         <h2 class=""><a name="{{ category[0] }}"></a>{{ category[0] }}</h2>
         <ul class="columnUl">
