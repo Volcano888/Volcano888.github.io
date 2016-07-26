@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "分类"
+title: "标签"
 description: ""  
 header-img: "img/semantic.jpg"  
 ---

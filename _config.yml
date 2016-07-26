@@ -1,5 +1,5 @@
 # Site settings
-title: Linux学习之路
+title: Linux成长之路
 header-img: "img/twitter.jpg"
 tagline: "cn"  
 description: "绯云破晓|读而立·写而生"  
@@ -10,10 +10,10 @@ url: ""
 owner: 
   name: "Andy Shen"
   email: 39658218@qq.com
-  bio: "Linux学习之路"
+  bio: "Linux成长之路"
 
 # Data
-gavatar: http://dreamofbook.qiniudn.com/Az..png
+gavatar: img/cnfeat.jpg
 favicon: img/favicon.png
 
 douban_username:  
@@ -43,7 +43,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "CnFeat"
+      author: "volcano888"
       header-img: "img/twitter.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
