@@ -48,6 +48,8 @@ $(function () {
 
 
 
+<p></p>
+
 <div id='tagcloud' >
     {% for tag in site.tags %}
     <a href="{{site.url_tags}}#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">#{{ tag[0] }}</a>
