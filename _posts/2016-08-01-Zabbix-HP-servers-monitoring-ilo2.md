@@ -60,7 +60,7 @@ ipmi_script_iLO_discovery.xml为模板，在zabbix界面导入
 
 ```bash
 命令:
-./ilo_discovery.pl xxx.xxx.xxx.xxx zabbix zabbix#ipmi sensor fan numeric
+./ilo_discovery.pl xxx.xxx.xxx.xxx 用户 密码 sensor fan numeric
 ```
 
 效果图：
