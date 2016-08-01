@@ -57,9 +57,12 @@ ipmi_script_iLO_discovery.xml为模板，在zabbix界面导入
 ![image](https://raw.githubusercontent.com/Volcano888/Volcano888.github.io/master/images/Zabbix/zabbixipmi1.jpg)
 
 脚本检查：
+
 ```bash
+命令:
 ./ilo_discovery.pl xxx.xxx.xxx.xxx zabbix zabbix#ipmi sensor fan numeric
 ```
+
 效果图：
 ![image](https://raw.githubusercontent.com/Volcano888/Volcano888.github.io/master/images/Zabbix/zabbixipmi2.jpg)
 
