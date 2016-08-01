@@ -13,7 +13,8 @@ duoshuo: true
 ## 1.安装freeipmi
 
 下载地址:
-```
+
+```bash
 wget http://ftp.gnu.org/gnu/freeipmi/freeipmi-1.2.1.tar.gz 
 tar -xvzf freeipmi-1.2.1.tar.gz
 cd freeipmi-1.2.1
@@ -26,6 +27,7 @@ X64:
 
 make install
 ```
+
 ## 2.下载脚本和模板
 
 [ilo_discovery.pl](https://github.com/Volcano888/Volcano888.github.io/blob/master/soft-conf/Zabbix/ilo_discovery.pl)
@@ -46,17 +48,19 @@ ipmi_script_iLO_discovery.xml为模板，在zabbix界面导入
 ## 4.创建主机和测试
 
 使用以下命令测试，是否可以获取到硬件信息
+
 ```bash
 检查freeipmi连接ilo
 /usr/sbin/ipmi-sensors -D LAN2_0 -h 192.168.0.1 -u monitor -p P@$$w0rd -l USER -W discretereading --no-header-output --quiet-cache --sdr-cache-recreate --comma-separated-output --entity-sensor-names
 ```
+效果图：
 ![image](https://raw.githubusercontent.com/Volcano888/Volcano888.github.io/master/images/Zabbix/zabbixipmi1.jpg)
 
-
+脚本检查：
 ```bash
-脚本检查
 ./ilo_discovery.pl xxx.xxx.xxx.xxx zabbix zabbix#ipmi sensor fan numeric
 ```
+效果图：
 ![image](https://raw.githubusercontent.com/Volcano888/Volcano888.github.io/master/images/Zabbix/zabbixipmi2.jpg)
 
 创建监控主机,因为是自定义监控，IPMI interface是不使用的
@@ -82,7 +86,9 @@ ipmi_script_iLO_discovery.xml为模板，在zabbix界面导入
 报错
 configure: error: libgcrypt required to build libfreeipmi
 
+
 ```
+安装libgcrypt包
 yum install install libgcrypt-devel -y
 
 ```
