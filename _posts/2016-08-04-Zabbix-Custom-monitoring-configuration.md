@@ -22,6 +22,7 @@ location /nginx-status {
 	deny all;
 }	
 ```
+
 ### 2、配置 nginx status 监控脚本
 
 

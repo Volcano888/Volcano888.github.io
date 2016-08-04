@@ -14,11 +14,16 @@ duoshuo: true
 
 ## 1.配置Trigger
 
-### 定位到模板的 Trigger 入口
+定位到模板的 Trigger 入口
+
 ![image](https://raw.githubusercontent.com/Volcano888/Makedown-poto/master/mdphotos/Trigger1.png)
-### 创建 Trigger
+
+创建 Trigger
+
 ![image](https://raw.githubusercontent.com/Volcano888/Makedown-poto/master/mdphotos/Trigger2.png)
-### 配置 Trigger
+
+配置 Trigger
+
 ![image](https://raw.githubusercontent.com/Volcano888/Makedown-poto/master/mdphotos/Trigger3.png)
 
 ## 2.配置邮件告警介质
@@ -32,7 +37,7 @@ duoshuo: true
 
 ![image](https://raw.githubusercontent.com/Volcano888/Volcano888.github.io/master/images/Zabbix/Media2.jpg)
 
-### 3.2 创建并配置用户
+### 2.2 创建并配置用户
 
 创建用户：
 
