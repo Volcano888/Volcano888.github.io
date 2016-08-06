@@ -7,11 +7,11 @@
 #
 
 
-title:              Linux成长之路
+title:              运维随笔
 description:        绯云破晓|读而立·写而生
 disqus_shortname:
 duoshuo_shortname:  绯云破晓
-url:                https://volcano888.github.io/
+url:                http://stackfans.com/
 
 # url_tags必须和tags.md中的permalink定义相同，这样定义的原因是不希望permalink中包含文件类型后缀。
 # 或者tags.md中不定义permalink，这里直接引用tags.md的在目录中的绝对地址。
@@ -23,7 +23,7 @@ url_timeline:       /timeline/
 url_rss:            /rss/
 url_about:          /about/
 
-production_url:     https://volcano888.github.io/         # production_url是sitemap生成的url,方便百度谷歌收录.
+production_url:     http://stackfans.com/         # production_url是sitemap生成的url,方便百度谷歌收录.
 favicon:            /images/favicon.ico
 # back_to_top:      /images/back_to_top.png # JekyllPure.css不能引用{{site.}}???
 
