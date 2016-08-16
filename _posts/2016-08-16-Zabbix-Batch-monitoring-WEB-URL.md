@@ -7,9 +7,10 @@ avatarimg:
 tags: [Zabbix]
 duoshuo: true
 ---
-## zabbix_agent配置
+## 1.zabbix_agent配置
 
 zabbix_agentd.conf设置
+
 ```
 [root@zabbix3 externalscripts]# cat /etc/zabbix/zabbix_agentd.conf |grep ^[a-Z]
 PidFile=/var/run/zabbix/zabbix_agentd.pid
@@ -21,9 +22,10 @@ Hostname=Zabbix server
 Include=/etc/zabbix/zabbix_agentd.d/*.conf
 ```
 
-## Low level discovery 自动发现脚本
+## 2.Low level discovery 自动发现脚本
 
 web_site_code_status脚本代码如下：
+
 
 ```
 #!/bin/bash
@@ -65,7 +67,7 @@ Web_SITE_discovery () {
 	esac
 ```
 
-## 使用
+## 3.使用
 
 运行脚本，输出格式如下
 
@@ -82,7 +84,7 @@ Web_SITE_discovery () {
                         "{#SITENAME}":"oa.juneyao.net"}]}
 ```
 
-## 在agent.conf里添加KEY
+## 4.在agent.conf里添加KEY
 
 KEY信息如下：
 
@@ -115,5 +117,5 @@ UserParameter=web.site.code[*],/usr/lib/zabbix/externalscripts/web_site_code_sta
 ![image](https://raw.githubusercontent.com/Volcano888/Volcano888.github.io/master/images/Zabbix/zabbixweb5.jpg)
 
 
-## REF
+## 5.REF
 参考《Zabbix企业级分布式监控系统》
