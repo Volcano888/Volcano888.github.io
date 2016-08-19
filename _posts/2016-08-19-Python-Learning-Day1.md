@@ -12,7 +12,9 @@ duoshuo: true
 
 学习一天的资料记录
 
+
 ### 1.用户输入
+
 
 
 ```
@@ -43,7 +45,9 @@ print(pwd)
 
 ```
 
-### 模块
+
+### 2.模块
+
 
 sys模块
 
@@ -117,6 +121,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 ### 3.数据类型
+
 
 #### 数字
 
