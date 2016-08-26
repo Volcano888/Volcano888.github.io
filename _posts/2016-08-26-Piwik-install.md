@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PIWIK安装实践用
+title: PIWIK安装实践
 description: "PIWIK安装实践"
 category: Monitor
 avatarimg: 
